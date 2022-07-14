@@ -4,7 +4,7 @@
 # B happens to equal the minimum value in Western Longitude (LONG_W in STATION).
 # C happens to equal the maximum value in Northern Latitude (LAT_N in STATION).
 # D happens to equal the maximum value in Western Longitude (LONG_W in STATION).
-Query the Manhattan Distance between points  and  and round it to a scale of  decimal places.
+# Query the Manhattan Distance between points  and  and round it to a scale of  decimal places.
 ----------
 SELECT ROUND(ABS(MAX(LAT_N)-MIN(LAT_N)) + ABS(MAX(LONG_W)-MIN(LONG_W)), 4) FROM STATION;
 ----------
